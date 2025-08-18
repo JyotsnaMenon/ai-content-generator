@@ -1,10 +1,15 @@
 import tweepy
 
-API_KEY = "yjpvrQnmtJbJWjmLz5WZQu5ip"
-API_SECRET_KEY = "UDTCOzYqTTeBSfhCTkosqg4dSvV5hQ7q5c1O1T8zl1dLwnioNp"
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAALaM3gEAAAAAss17uTZygQ0YeuFus%2FaUTafABwc%3DXVmcUjfAvkhhPnM5M9cYVnwISsv2arXFTLyLgc4wk4dXEMzHfi"
-ACCESS_TOKEN = "1957418500160651264-KqrvEZVnQYinwbxwL4yA5NqVugBxX6"
-ACCESS_TOKEN_SECRET = "nzZDHmnfOTReZY187BiVhcUWshzUSp9asRdadgIzEEQOT"
+from dotenv import load_dotenv
+import os, tweepy
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+API_SECRET_KEY = os.getenv("API_SECRET_KEY")
+BEARER_TOKEN = os.getenv("BEARER_TOKEN")
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+ACCESS_TOKEN_SECRET = os.getenv("ACCESS_TOKEN_SECRET")
 
 
 twitterClient = tweepy.Client(
