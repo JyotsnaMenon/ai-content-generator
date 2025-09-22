@@ -38,11 +38,11 @@ def create_tweet(prompt):
         out_dict_a=json.loads(out_a)
         tweet_a=out_dict_a['tweet']
         
-        print("TWEET A ======>")
-        print(tweet_a)
-        print(" ")
+        #print("TWEET A ======>")
+        #print(tweet_a)
+        #print(" ")
         
-        sleep(2)
+        sleep(0.5)
 
 
 
@@ -53,11 +53,11 @@ def create_tweet(prompt):
         out_dict_b=json.loads(out_b)
         tweet_b=out_dict_b['tweet']
             
-        print("TWEET B ======>")
-        print(tweet_b)
-        print(" ")
+        #print("TWEET B ======>")
+        #print(tweet_b)
+        #print(" ")
         
-        sleep(2)
+        #sleep(0.5)
 
 
         
@@ -93,18 +93,21 @@ def create_tweet(prompt):
         explanation = prediction_dict['explanation']
 
         
-        print("Tweet A vs Tweet B ======>")
-        print(tweet_a_vs_tweet_b)
-        print(" ")
-        print("PREDICTION ======>")
-        print(prediction)
-        print(" ")
-        print("EXPLANATION ======>")
-        print(explanation)
-        print(" ")
-
+        #print("Tweet A vs Tweet B ======>")
+        #print(tweet_a_vs_tweet_b)
+        #print(" ")
+        #print("PREDICTION ======>")
+        #print(prediction)
+        #print(" ")
+        #print("EXPLANATION ======>")
+        #print(explanation)
+        #print(" ")
+        print("done !")
 
         return {
+            "tweet_a": tweet_a,
+            "tweet_b": tweet_b,
+
             "tweet_a_vs_tweet_b": tweet_a_vs_tweet_b,
             "prediction": prediction,
             "explanation": explanation

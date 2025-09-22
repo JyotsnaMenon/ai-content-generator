@@ -1,21 +1,29 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS, cross_origin
 
 from create_tweet import create_tweet
 
-flask_app = Flask(__name__)
+flask_app = Flask(__name__,template_folder='ui')
 cors = CORS(flask_app) # allow CORS for all domains on all routes.
 
+#@flask_app.route("/") # root or index route
+
+#def index():
+    #return "Hello Flask ! this is a sample flask app !"
+
+#@flask_app.route("/add/<num1>/<num2>") # adding 2 numbers
+#def add_numbers(num1, num2):
+    #sumNum = int(num1) + int(num2)
+    #return f"this method will add numbers {num1} and {num2} ==> {sumNum}"
+
+#@flask_app.route("/generate") 
+
 @flask_app.route("/") # root or index route
+#@app.route("/")
 def index():
-    return "Hello Flask ! this is a sample flask app !"
+    return render_template("index.html")
 
-@flask_app.route("/add/<num1>/<num2>") # adding 2 numbers
-def add_numbers(num1, num2):
-    sumNum = int(num1) + int(num2)
-    return f"this method will add numbers {num1} and {num2} ==> {sumNum}"
-
-@flask_app.route("/generate") # adding 2 numbers
+@flask_app.route("/generate")
 @cross_origin()
 def generate_tweet():
     prompt = request.args.get('prompt')
