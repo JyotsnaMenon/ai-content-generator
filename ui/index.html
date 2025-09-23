@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Tweet Generator</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #app {
+      background: #1e1e1e;
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .header {
+      background: #272727;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #61dafb;
+      border-bottom: 1px solid #333;
+    }
+
+    #output {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .chat-bubble {
+      max-width: 75%;
+      padding: 12px 16px;
+      border-radius: 16px;
+      line-height: 1.4;
+      word-wrap: break-word;
+      font-size: 15px;
+    }
+
+    .user {
+      background: #0078d7;
+      align-self: flex-end;
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+
+    .bot {
+      background: #2a2a2a;
+      border: 1px solid #333;
+      align-self: flex-start;
+      color: #f0f0f0;
+      border-bottom-left-radius: 4px;
+    }
+
+    .input-area {
+      display: flex;
+      padding: 12px;
+      background: #272727;
+      border-top: 1px solid #333;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      background: #333;
+      color: #fff;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    button {
+      background: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    #loading {
+      font-size: 14px;
+      color: #aaa;
+      padding: 8px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="header">🤖 AI Tweet Generator</div>
+    <div id="output"></div>
+    <div class="input-area">
+      <input id="prompt" placeholder="Type your prompt here..." />
+      <button onclick="runPrompt()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    const output = document.getElementById('output');
+
+    const appendMessage = (text, sender = "bot") => {
+      const div = document.createElement("div");
+      div.classList.add("chat-bubble", sender);
+      div.innerHTML = text;
+      output.appendChild(div);
+      output.scrollTop = output.scrollHeight; // auto scroll
+    };
+
+    const runPrompt = async () => {
+      const input = document.getElementById('prompt');
+      if (!input.value.trim()) {
+        alert("Please enter a prompt first!");
+        return;
+      }
+
+      appendMessage(input.value, "user");
+      const userInput = input.value;
+      input.value = "";
+
+      appendMessage("⏳ Generating response...", "bot");
+
+      try {
+        const resp = await fetch(`http://127.0.0.1:5000/generate?prompt=${encodeURIComponent(userInput)}`);
+        const data = await resp.json();
+
+        // Remove loading bubble
+        output.removeChild(output.lastChild);
+
+        appendMessage(`<b>Tweet A:</b> ${data.tweet_a}`, "bot");
+        appendMessage(`<b>Tweet B:</b> ${data.tweet_b}`, "bot");
+        appendMessage(`<b>Comparison:</b> ${data.tweet_a_vs_tweet_b}`, "bot");
+        appendMessage(`<b>Prediction:</b> ${data.prediction}`, "bot");
+        appendMessage(`<b>Explanation:</b><br><pre>${data.explanation}</pre>`, "bot");
+      } catch (err) {
+        output.removeChild(output.lastChild);
+        appendMessage("❌ Error fetching response", "bot");
+        console.error(err);
+      }
+    };
+  </script>
+</body>
+</html>
