@@ -4,7 +4,34 @@ from flask_cors import CORS, cross_origin
 from create_tweet import create_tweet
 
 flask_app = Flask(__name__,template_folder='ui')
-cors = CORS(flask_app) # allow CORS for all domains on all routes.
+cors = CORS(flask_app)
+
+@flask_app.route("/") # root or index route
+def index():
+    return render_template("index.html")
+
+@flask_app.route("/generate")
+@cross_origin()
+def generate_tweet():
+    prompt = request.args.get('prompt')
+    tweeet_creation_data =  create_tweet(prompt)
+   
+    return jsonify(tweeet_creation_data)
+
+if __name__ == "__main__":
+    flask_app.run()
+
+
+
+
+
+
+
+
+
+
+
+ # allow CORS for all domains on all routes.
 
 #@flask_app.route("/") # root or index route
 
@@ -18,22 +45,11 @@ cors = CORS(flask_app) # allow CORS for all domains on all routes.
 
 #@flask_app.route("/generate") 
 
-@flask_app.route("/") # root or index route
-#@app.route("/")
-def index():
-    return render_template("index.html")
-
-@flask_app.route("/generate")
-@cross_origin()
-def generate_tweet():
-    prompt = request.args.get('prompt')
-    tweeet_creation_data =  create_tweet(prompt)
-    # tweet_a_vs_b = tweeet_creation_data['tweet_a_vs_tweet_b']
+ # tweet_a_vs_b = tweeet_creation_data['tweet_a_vs_tweet_b']
     # prediction = tweeet_creation_data['prediction']
     # explanation = tweeet_creation_data['explanation']
     # return f"Prompt is ==> {prompt}\nTweet A VS B ==>{tweet_a_vs_b}\nPrediction is ==> {prediction}\nExplanation is ==> {explanation}"
-    return jsonify(tweeet_creation_data)
 
 
-if __name__ == "__main__":
-    flask_app.run()
+    
+#@flask_app.route(rule: "/tweet")
