@@ -1,0 +1,434 @@
+ [
+    {
+        "public_metrics": {
+            "retweet_count": 28,
+            "reply_count": 78,
+            "like_count": 70,
+            "quote_count": 3,
+            "bookmark_count": 6,
+            "impression_count": 55826
+        },
+        "created_at": "2025-08-29T17:12:42.000Z",
+        "edit_history_tweet_ids": [
+            "1961477118820552764"
+        ],
+        "text": "Agentic AI workflows are going to transform business and drive big value for customers, says @awscloud CEO Matt Garman.\n\nHe joined CNBC\u2019s @jonfortt to discuss Amazon\u2019s plan to deliver scalable, secure capabilities that will help customers extract big ROI from AI. https://t.co/704HsnKmjT",
+        "id": "1961477118820552764"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 37,
+            "reply_count": 47,
+            "like_count": 114,
+            "quote_count": 5,
+            "bookmark_count": 7,
+            "impression_count": 97325
+        },
+        "created_at": "2025-08-28T23:36:29.000Z",
+        "edit_history_tweet_ids": [
+            "1961211315546165758"
+        ],
+        "text": "Thanks to @TIME for naming Amazon CEO @ajassy one of the 100 most influential people in AI.\n\nFrom building AWS over 20 years ago, to Amazon Bedrock, to Trainium, and a Trainium-powered supercomputer with @AnthropicAI, we're committed to providing solutions that shape the future https://t.co/DFgNqdecnX https://t.co/32NwvALdS1",
+        "id": "1961211315546165758"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 31,
+            "reply_count": 67,
+            "like_count": 111,
+            "quote_count": 3,
+            "bookmark_count": 7,
+            "impression_count": 114936
+        },
+        "created_at": "2025-08-26T16:08:22.000Z",
+        "edit_history_tweet_ids": [
+            "1960373767026126925"
+        ],
+        "text": "Our @ProjectKuiper network has surpassed 100 satellites in orbit \ud83d\udef0\ufe0f, with more shipping out regularly to join them in space. Here's the view from 280 miles up after our recent launch \ud83c\udf0e. https://t.co/JaqLu65Hmg https://t.co/LK0YWCASV6",
+        "id": "1960373767026126925"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 637
+        },
+        "created_at": "2025-08-14T01:00:34.000Z",
+        "edit_history_tweet_ids": [
+            "1955796654591795238"
+        ],
+        "text": "@jacenmiller Oh, no! We're sorry to hear about this poor experience. We'd like to look into this. Please send us a DM on our @AmazonHelp account here: https://t.co/lFydD9mpQY, and we'll be happy to help.\n-Nani",
+        "id": "1955796654591795238"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 395
+        },
+        "created_at": "2025-08-13T21:46:41.000Z",
+        "edit_history_tweet_ids": [
+            "1955747864216264883"
+        ],
+        "text": "@4everblueeyes Hello! We're so sorry for the condition your shoes arrived in! Please check here: https://t.co/5egjop5Ga4, for return/replacement options. We're here to help however we can! -Gena",
+        "id": "1955747864216264883"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 302
+        },
+        "created_at": "2025-08-13T20:21:51.000Z",
+        "edit_history_tweet_ids": [
+            "1955726514525212983"
+        ],
+        "text": "@count_sean Please send us a DM on our @AmazonHelp account here: https://t.co/ZI62uddiM7, so we can further assist. Please don't share any personal or account information for security purposes as we can't pull up accounts over X. Gena",
+        "id": "1955726514525212983"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 59
+        },
+        "created_at": "2025-08-13T16:35:54.000Z",
+        "edit_history_tweet_ids": [
+            "1955669652652081449"
+        ],
+        "text": "@count_sean Hello! You can find more details here: https://t.co/SExehaNDIs, about receiving a package that wasn't addressed to you. If you need further assistance, just let us know! -Gena",
+        "id": "1955669652652081449"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 34,
+            "reply_count": 122,
+            "like_count": 108,
+            "quote_count": 4,
+            "bookmark_count": 9,
+            "impression_count": 285044
+        },
+        "created_at": "2025-08-12T20:35:21.000Z",
+        "edit_history_tweet_ids": [
+            "1955367525195379136"
+        ],
+        "text": "Our #NBAonPrime Opening Night schedule reveal is almost here \ud83c\udfc0. https://t.co/DnnSlXvA5a",
+        "id": "1955367525195379136"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 3,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 978
+        },
+        "created_at": "2025-08-12T14:25:10.000Z",
+        "edit_history_tweet_ids": [
+            "1955274363525022014"
+        ],
+        "text": "@Fiberr_RL We're sorry to hear that the item you received was incorrect. We'd like to help you with this. Please reach out to us via DM, and we'll do our best to assist. Further, please don't include any personal or account information. \n-Tania https://t.co/8Lpni2HjRh",
+        "id": "1955274363525022014"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 420
+        },
+        "created_at": "2025-08-11T22:47:09.000Z",
+        "edit_history_tweet_ids": [
+            "1955038306804121672"
+        ],
+        "text": "@AMauback We encourage not including personally identifiable information over social media. If you\u2019d like to delete your post, click the \"v\" or \"...\" icon at the top of the post and select \"Delete Post.\" \nWe're sorry to hear about the problem with your delivery. Please DM us for additional",
+        "id": "1955038306804121672"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 38,
+            "reply_count": 76,
+            "like_count": 195,
+            "quote_count": 6,
+            "bookmark_count": 13,
+            "impression_count": 353348
+        },
+        "created_at": "2025-08-11T18:45:55.000Z",
+        "edit_history_tweet_ids": [
+            "1954977597693268353"
+        ],
+        "text": "\ud83d\ude80 An exciting update from @ProjectKuiper following its first set of missions with @SpaceX and @ulalaunch.\n\nWe're continuing to deploy our low Earth orbit satellite constellation, with many more launches to come. https://t.co/rJ8weY6672",
+        "id": "1954977597693268353"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 172
+        },
+        "created_at": "2025-08-11T18:05:30.000Z",
+        "edit_history_tweet_ids": [
+            "1954967425218158781"
+        ],
+        "text": "@Don83231101 Hi there. We're sorry to hear your items were crushed by poor packaging and damaged further by chemicals and food being packed in the same box.\n\nHere's some replacement/return/refund options: https://t.co/5egjop5Ga4. \n\nWe appreciate your feedback. We\u2019re always striving to improve",
+        "id": "1954967425218158781"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 294
+        },
+        "created_at": "2025-08-10T22:52:13.000Z",
+        "edit_history_tweet_ids": [
+            "1954677192757039522"
+        ],
+        "text": "@Nefalcon3 Hello there. Please reply to the email sent August 10, 2025 5:49PM with any further questions or concerns. -Tasha",
+        "id": "1954677192757039522"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 198
+        },
+        "created_at": "2025-08-10T21:08:31.000Z",
+        "edit_history_tweet_ids": [
+            "1954651093658488993"
+        ],
+        "text": "@Nefalcon3 We've replied via DM. -Tasha",
+        "id": "1954651093658488993"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 42
+        },
+        "created_at": "2025-08-10T20:47:21.000Z",
+        "edit_history_tweet_ids": [
+            "1954645767185977425"
+        ],
+        "text": "@Nefalcon3 We'd like to help you with this, please reach out to us via DM. We'll do our best to assist. Further, please don\u2019t share any personal information. -Tasha https://t.co/8Lpni2HjRh",
+        "id": "1954645767185977425"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 144
+        },
+        "created_at": "2025-08-10T16:23:31.000Z",
+        "edit_history_tweet_ids": [
+            "1954579374436503717"
+        ],
+        "text": "@rheriana03 @rheriana03 We apologize for the inconvenience.\nWe do not have access to your account details over SNS. Kindly reach out to us at: https://t.co/46lqbXNInx\n*English Phone/Chat 9am-9pm JST (12am-12pm UTC)\n*Japanese Phone/Chat 24/7\n\nFrom now on, support will be provided by",
+        "id": "1954579374436503717"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 206
+        },
+        "created_at": "2025-08-09T20:57:08.000Z",
+        "edit_history_tweet_ids": [
+            "1954285843515867622"
+        ],
+        "text": "@Lea_MWilson We're so sorry to hear about the wait! We always try to ship quickly, and understand how frustrating delays can be. Please continue to wait patiently, and let us know if your order doesn't arrive by the revised estimate here: https://t.co/SsGOmzG2p2. We apologize once more for",
+        "id": "1954285843515867622"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 238
+        },
+        "created_at": "2025-08-09T02:51:13.000Z",
+        "edit_history_tweet_ids": [
+            "1954012562829328833"
+        ],
+        "text": "@ChrisDisability We apologize for any inconvenience this may have caused.\n-Jennifer",
+        "id": "1954012562829328833"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 100
+        },
+        "created_at": "2025-08-09T02:39:27.000Z",
+        "edit_history_tweet_ids": [
+            "1954009603634614383"
+        ],
+        "text": "@ChrisDisability We understand your concern. Please wait 48 hours, if it hasn't arrived by then please reach out again. -Jennifer",
+        "id": "1954009603634614383"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 106
+        },
+        "created_at": "2025-08-09T02:20:24.000Z",
+        "edit_history_tweet_ids": [
+            "1954004806072250705"
+        ],
+        "text": "@ChrisDisability We're sorry for any frustration. You can find additional information on how Help page here: https://t.co/DzOuL5v9zt. -Jennifer",
+        "id": "1954004806072250705"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 261
+        },
+        "created_at": "2025-08-07T05:16:58.000Z",
+        "edit_history_tweet_ids": [
+            "1953324465426735378"
+        ],
+        "text": "@Pumpkin6672001 We're sorry to hear you're having an issue with a recent delivery and would like to help. Please use the following link to submit your details via DM and be sure not submit any personal account details. -Ronda https://t.co/8Lpni2HjRh",
+        "id": "1953324465426735378"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 314,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 5
+        },
+        "created_at": "2025-08-06T16:27:56.000Z",
+        "edit_history_tweet_ids": [
+            "1953130932765970828"
+        ],
+        "text": "RT @ajassy: Interesting launch in Amazon Bedrock of new OpenAI open weight models. These text models are 18x more price performant than Dee\u2026",
+        "id": "1953130932765970828"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 182
+        },
+        "created_at": "2025-08-06T11:05:29.000Z",
+        "edit_history_tweet_ids": [
+            "1953049784224235808"
+        ],
+        "text": "@sadecedogaaa Veri g\u00fcvenli\u011fi nedeniyle sosyal medyada herhangi sipari\u015f ve ki\u015fisel bilgiler payla\u015fmaman\u0131 \u00f6neriyoruz. Para iadesini, en fazla 5-7 g\u00fcn i\u00e7inde banka hesab\u0131nda g\u00f6rebilirsin. Para iadesi ger\u00e7ekle\u015fti\u011finde bizden ayr\u0131nt\u0131l\u0131 bilgiler i\u00e7eren onay e-postas\u0131 alacaks\u0131n. Buradan daha fazla",
+        "id": "1953049784224235808"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 158
+        },
+        "created_at": "2025-08-06T07:13:51.000Z",
+        "edit_history_tweet_ids": [
+            "1952991494417039688"
+        ],
+        "text": "@brittneyblueyes Hello! We're so sorry to hear about this experience. Please reach out to us via DM. We'll do our best to assist. Further, please don\u2019t share any personal information. -Chloe https://t.co/8Lpni2HjRh",
+        "id": "1952991494417039688"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 10,
+            "reply_count": 26,
+            "like_count": 51,
+            "quote_count": 1,
+            "bookmark_count": 7,
+            "impression_count": 42914
+        },
+        "created_at": "2025-08-05T17:08:57.000Z",
+        "edit_history_tweet_ids": [
+            "1952778868924006778"
+        ],
+        "text": "https://t.co/CwsWo8CG6M",
+        "id": "1952778868924006778"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 225,
+            "reply_count": 151,
+            "like_count": 1222,
+            "quote_count": 30,
+            "bookmark_count": 159,
+            "impression_count": 202977
+        },
+        "created_at": "2025-08-05T17:08:57.000Z",
+        "edit_history_tweet_ids": [
+            "1952778866814328987"
+        ],
+        "text": "\ud83d\udea8 Huge news: @OpenAI's open weight models are available today on AWS via Amazon Bedrock and Amazon SageMaker AI. \n\nThis means more access to powerful AI tech and advanced reasoning capabilities for millions of @awscloud customers worldwide. \n\nMore options, more innovation, more https://t.co/x1YGLQXsFF",
+        "id": "1952778866814328987"
+    },
+    {
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 431
+        },
+        "created_at": "2025-08-03T15:53:13.000Z",
+        "edit_history_tweet_ids": [
+            "1952035032895283396"
+        ],
+        "text": "@TookBeen_baaad Hello! We apologize for this inconvenience. We don't charge your card until your order is being prepared to ship. You can learn more about authorizations here: https://t.co/V6fKPPcjVy. -Sasha",
+        "id": "1952035032895283396"
+    }
+]

@@ -31,25 +31,4 @@ if __name__ == "__main__":
 
 
 
- # allow CORS for all domains on all routes.
-
-#@flask_app.route("/") # root or index route
-
-#def index():
-    #return "Hello Flask ! this is a sample flask app !"
-
-#@flask_app.route("/add/<num1>/<num2>") # adding 2 numbers
-#def add_numbers(num1, num2):
-    #sumNum = int(num1) + int(num2)
-    #return f"this method will add numbers {num1} and {num2} ==> {sumNum}"
-
-#@flask_app.route("/generate") 
-
- # tweet_a_vs_b = tweeet_creation_data['tweet_a_vs_tweet_b']
-    # prediction = tweeet_creation_data['prediction']
-    # explanation = tweeet_creation_data['explanation']
-    # return f"Prompt is ==> {prompt}\nTweet A VS B ==>{tweet_a_vs_b}\nPrediction is ==> {prediction}\nExplanation is ==> {explanation}"
-
-
-    
-#@flask_app.route(rule: "/tweet")
+ 
