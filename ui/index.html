@@ -11,7 +11,7 @@
       color: #e6edf3;
       margin: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       height: 100vh;
     }
@@ -19,7 +19,6 @@
     #app {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       background: #161b22;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -117,11 +116,6 @@
       background: #2ea043;
     }
 
-    .loading {
-      color: #aaa;
-      font-size: 14px;
-    }
-
     .example-prompts {
       font-size: 13px;
       text-align: center;
@@ -131,6 +125,7 @@
       border-top: 1px solid #30363d;
     }
 
+    /* Response Styling */
     .response-block {
       display: flex;
       flex-direction: column;
@@ -154,6 +149,34 @@
       line-height: 1.5;
     }
 
+    /* Typing Indicator */
+    .typing {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #58a6ff;
+      border-radius: 50%;
+      animation: blink 1.4s infinite both;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0.2; transform: translateY(0); }
+      20% { opacity: 1; transform: translateY(-3px); }
+      100% { opacity: 0.2; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -163,7 +186,7 @@
     <div id="chat-box">
       <div class="bot message">
         👋 Hey there! I’m your Tweet Generator bot.  
-        Enter a topic or idea, and I’ll create a few tweet options with explanations.
+        Enter a topic or idea, and I’ll create tweet options with a prediction and explanation.
       </div>
     </div>
 
@@ -189,6 +212,19 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
+    function showTypingIndicator() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'bot message typing';
+      typingDiv.innerHTML = `
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      `;
+      chatBox.appendChild(typingDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+      return typingDiv;
+    }
+
     const runPrompt = async () => {
       const userInput = input.value.trim();
       if (!userInput) return;
@@ -196,13 +232,13 @@
       appendMessage(userInput, 'user');
       input.value = '';
 
-      appendMessage("⏳ Generating tweets...", "bot");
+      const typingIndicator = showTypingIndicator();
 
       try {
         const resp = await fetch(`http://127.0.0.1:5000/generate?prompt=${encodeURIComponent(userInput)}`);
         const data = await resp.json();
 
-        chatBox.removeChild(chatBox.lastChild);
+        typingIndicator.remove();
 
         appendMessage(`
           <div class="response-block">
@@ -215,7 +251,7 @@
         `, "bot");
 
       } catch (err) {
-        chatBox.removeChild(chatBox.lastChild);
+        typingIndicator.remove();
         appendMessage("❌ Error fetching response. Please try again.", "bot");
         console.error(err);
       }
